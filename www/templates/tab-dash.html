@@ -1,0 +1,52 @@
+<ion-view title='<img class="title-image" src="./img/logo-usdaw.png" />'>
+  <ion-content class="padding">
+    <div class="list card">
+      <a class="item item-icon-left item-positive" href="#">
+        <i class="icon ion-person-stalker"></i>
+        CAMPAIGNS :
+        <span class="badge badge-assertive">3</span>
+      </a>
+      <div class="item item-body">
+        <ion-list>
+          <a ng-repeat="item in campaigns" class="item item-thumbnail-left">
+            <img ng-src="{{ item.image }}">
+            <h4>{{ item.date }}</h4>
+            <h2>{{ item.headr }}</h2>
+          </a>
+        </ion-list>
+      </div>
+    </div>
+    <div class="list card">
+      <a class="item item-icon-left item-positive" href="#">
+        <i class="icon ion-person-stalker"></i>
+        NEWS :
+        <span class="badge badge-assertive">4</span>
+      </a>
+      <div class="item item-body">
+        <ion-list>
+          <a ng-repeat="item in news" class="item item-thumbnail-left">
+            <img ng-src="{{ item.image }}">
+            <h4>{{ item.date }}</h4>
+            <h2>{{ item.headr }}</h2>
+          </a>
+        </ion-list>
+
+      </div>
+    </div>
+    <div class="list">
+      <a class="item item-icon-left item-positive" href="#">
+        <i class="icon ion-person-stalker"></i>
+        EVENTS :
+        <span class="badge badge-assertive">3</span>
+      </a>
+        <ion-list>
+          <a ng-repeat="item in events" class="item item-thumbnail-left">
+              <img ng-src="{{ item.image }}">
+              <h4>{{ item.date }}</h4>
+              <h2>{{ item.headr }}</h2>
+          </a>
+        </ion-list>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
